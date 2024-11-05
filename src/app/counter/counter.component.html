@@ -1,0 +1,15 @@
+<main>
+  <article class="d-grid justify-content-center ">
+    <h2>Creation counter, practice</h2>
+
+   <h3 class="fw-bold text-center">
+    {{ counter }}
+   </h3>
+    <div class="d-inline-flex p-3 gap-2 justify-content-center">
+      <button type="button" (click)="decrement()" class="btn btn-danger"  [disabled]="counter === 0" [ngClass]="{'disabled-button': counter === 0}">-1</button>
+      <button  type="button" (click)="reset()" class="btn btn-succes">Reset</button>
+
+      <button type="button" (click)="increment()" class="btn btn-primary">+1</button>
+    </div>
+  </article>
+</main>
